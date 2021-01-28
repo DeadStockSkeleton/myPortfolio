@@ -1,21 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/style.css">
-    </head>
-    <body>
-        <div class='section'>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="navbar-container">
+        <div class='navbar'>
+            <p>I'yana Medlock</p>
+            <div class="navbar-inner">
+                <ul>
+                    <li><a>About</a></li>
+                    <li><a>Works</a></li>
+                    <li><a>Resume</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
 
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="./assets/script.js" async defer></script>
-    </body>
+    </div>
+
+    <main>
+        <div class="mainContainer">
+            <div class='section'>
+                <div id='slideshowContainer'>
+                    <span class="homeH1 slides"><b>Wassup!</b> My name is Iyana Medlock, <b>full-stack developer</b> in the
+                    making
+                    </span>
+                    <span class="homeH1 slides">I am a 20-year-old student who is majoring in computer science. I dabble in <b>HTML, Javascript, Jquery and a smidge of C!</b>
+
+                    </span> 
+                    <span class="homeH1 slides">
+                        I reside in Houston, Texas, where I attend San Jac Community college and Rice University Coding Bootcamp.
+                    </span> 
+                    <span class="homeH1 slides">
+                        I enjoy creating things such as <b>websites, Chrome extensions, and Electron software.</b> I plan to become an official full-stack web-developer then obtaining my bachelor's in computer science.
+                    </span> 
+                </div>
+                
+                <div class="slideshowBtnContainer">
+                    <button id="leftBtn" class="btn slideshowBtn" onclick=moveSlide(-1)>
+                        <svg class="svgIconBtn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16"
+                            height="16" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#cccccc">
+                                    <path
+                                        d="M67.35547,32.54395l-46.61132,48.08105l46.61132,48.08105l7.72656,-7.4746l-34.05567,-35.14746h120.22364v-10.75h-120.43359l34.26563,-35.31544z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+
+                    <button id="rightBtn" class="btn slideshowBtn" onclick=moveSlide(1)>
+                        <svg class="svgIconBtn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16"
+                            height="16" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#cccccc">
+                                    <path
+                                        d="M115.64649,32.7959l-7.68457,7.5166l34.09766,34.9375h-120.55957v10.75h120.55957l-34.09766,34.9375l7.68457,7.5166l46.65331,-47.8291z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class='section'>
+            </div>
+            <div class='section'>
+            </div>
+            <div class='section'>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./assets/script.js" async defer></script>
+</body>
+
 </html>

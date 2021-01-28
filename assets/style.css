@@ -103,13 +103,106 @@ input, select {
 /*------------------------------------------------------*/
 *{
     font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+}
+
+
+.navbar-container{
+    position: fixed;
+    width: 100vw;
+    z-index: 9999;
+
 }
 
 body{
-    background: rgb(231, 231, 231);
+    background: rgb(24, 24, 24);
+}
+
+.navbar{
+    width: 100%;
+    padding: 50px;
+    display: inline-flex;
+    font-size: 15px;
+    color: #ccc;
+    background: rgb(24, 24, 24);
+}
+.navbar-inner{
+    width: 84%;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 25px;
+    display: inline;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.mainContainer{
+    padding: 250px
 }
 
 .section{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: inherit;
+}
+
+.homeH1{
+    font-size: 50px;
+    line-height: 75px;
+}
+
+b{
+    color: #ff7e30;
+}
+
+.btn{
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+
+}
+
+.slideshowBtn{
+    margin: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid #ccc 1px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.svgIconBtn{
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.slideshowBtn:hover{
+    background: #ccc;
+    transition: .3s;
+}
+
+.slideshowBtn:hover > .svgIconBtn{
+    filter:invert(1);
+}
+
+.slides{
+    display: none;
 }
