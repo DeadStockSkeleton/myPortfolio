@@ -6,123 +6,316 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 body {
-    line-height:1;
+    line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
 }
 
-blockquote, q {
-    quotes:none;
+blockquote,
+q {
+    quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 del {
     text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+    vertical-align: middle;
 }
+
 /*------------------------------------------------------*/
 @font-face {
     font-family: AvantGardeGothicBold;
     src: url(/assets/AvantGardeGothic.otf);
-  }
-*{
+}
+
+@font-face {
+    font-family: AvantGardeGothicMid;
+    src: url(/assets/AvantGardeGothicMid.otf);
+}
+
+@font-face {
+    font-family: MADE;
+    src: url(/assets/MonumentExtended-Black.otf);
+}
+
+* {
+    font-family: 'AvantGardeGothicMid', sans-serif;
+    color: rgb(15, 15, 15);
+    
+}
+
+span {
+    font-family: 'AvantGardeGothicBold', sans-serif;
+}
+
+
+body {
+    background: rgb(246, 247, 248);
+    overflow: hidden;
+}
+
+.navbar-container {
+    position: fixed;
+    width: 100vw;
+
+}
+
+.navbar {
+    font-family: 'AvantGardeGothicBoldMid', sans-serif;
+    height: 50px;
+    padding: 50px;
+    font-size: 20px;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 14px;
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    border-bottom: 1px solid transparent;
+    position: relative;
+    left: 100%;
+    cursor: pointer;
+}
+
+
+.nav-container {
+    position: relative;
+    float: right;
+}
+
+.active {
     font-family: 'AvantGardeGothicBold', sans-serif;
     color: rgb(15, 15, 15);
 }
 
-
-body{
-    background: rgb(235, 235, 235);
-}
-
-.navbar-container{
-    position: fixed;
+.section-container {
     width: 100vw;
-    
+    height: 100vh;
 }
 
-.navbar{
-    height: 50px;
+.section {
     padding: 50px;
-    font-size: 20px;
 }
+
+.sphere-container {
+    position: fixed;
+    left: 47.5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+
+}
+
+.ball {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: radial-gradient(circle 1224px at 50.6% 8.8%, rgba(255, 255, 255, 1) 0%, rgb(185, 200, 216) 100.2%);
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    z-index: 1;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,0%);
+    transform-style: preserve-3d;
+}
+
+
+
+.text {
+    position: absolute;
+    animation: animate 5s linear infinite;
+    transform-style: preserve-3d;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
+    }
+}
+
+
+.stage {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    transform: translate3d(-0%, 0%, 0);
+    left: 50%;
+    top: -15rem;
+    transform-style: preserve-3d;
+}
+
+.text .char {
+    position: absolute;
+    font-family: 'MADE', sans-serif;
+    font-size: 50px;
+    transform-origin: center;
+    transform: rotateY(calc(var(--char-index) * 12deg)) translateZ(250px);
+    transform-style: preserve-3d;
+
+
+}
+
+
