@@ -7,10 +7,10 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/avantgardemditc" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/ts-block" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avantgardemditc" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/ts-block" rel="stylesheet">
                 
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
@@ -20,44 +20,29 @@
 </head>
 
 <body>
-    <div class='mode-toggle-container'>
-        <button class='mode-toggle-btn btn'>
 
-        </button>
-    </div>
-    <div class="navbar-container">
-        <main>
-        <div class="navbar">
-            <span>I'yana Medlock</span>
-            <ul class="nav-container">
-                <li>
-                    <a href='index.html' class="active nav-link">
-                        <span class='nav-extra'>•</span>Home
-                    </a>
-                    <a href='about.html' class="nav-link">
-                        <span class='nav-extra'>•</span>About
-                    </a>
-                    <a href='work.html'  class="nav-link">
-                        <span class='nav-extra'>•</span>Work
-                    </a>
-                    <a href='contact.html'  class="nav-link">
-                        <span class='nav-extra'>•</span>Contact
-                    </a>
-                </li>
-            </ul>
+    <main id="main">
+        <div class='top-nav-container'>
+            <ul style='width:100%;'>
+                <li><a id="about-link" class='nav-link about-link' href="about.html">about</a></li>
+                <li><a class='nav-link work-link'  href="work.html">work</a></li>
+                <li><a class='nav-link contact-link' href="contact.html">contact</a></li>
+                
+              </ul>          
         </div>
-    </div>
-    <div id="home" class='block section-container'>
+    <div class='block section-container'>
         <div class='section home'>
-            <a href='https://github.com/DeadStockSkeleton' target='_blank' class='sphere-container'>
-                <div class="ball"></div>
+            <a id='openNav' target='_blank' class='sphere-container'>
                 <div class='stage'>
-                    <p class='text' data-splitting> ★ DEADSTOCKSKELETON ★ </p>
+                    <p class='text' data-splitting>★ DEADSTOCKSKELETON ★  </p>
                 </div>
             </a>
         </div>
     </div>
-</main>
+    </main>
+    <div id="sidebar" class="sidebar">
+
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="./assets/script.js" async defer></script>
