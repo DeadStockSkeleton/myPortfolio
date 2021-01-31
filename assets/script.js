@@ -2,3 +2,8 @@ Splitting();
 
 
 
+$(document).ready(function(){
+
+  
+
+});

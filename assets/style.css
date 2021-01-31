@@ -178,7 +178,7 @@ select {
 * {
     font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
     color: #0f0f0f;
-    transition: .3s;;
+    transition: .3s;
     
 }
 
@@ -188,30 +188,23 @@ span {
 
 
 body {
-    display: flex;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   
 }
 
 
-.section-container {
-    width: 100vw;
-    height: 100vh;
-}
 
-.section, .top-nav-container {
-    position: fixed;
+.section {
     top: 0px;
     padding: 25px;
 }
 
 .sphere-container {
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 40vh;
     left: 47.5%;
     transform: translate(-50%, -50%);
     transform-style: preserve-3d;
-    cursor: pointer;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     width: 400px;
     height: 400px;
@@ -245,11 +238,10 @@ body {
 .stage {
     display: flex;
     position: relative;
-    width: 100vw;
     text-align: center;
     transform: translate3d(-0%, 0%, 0);
     left: 50%;
-    top: 40%;
+    top: 20vh;
     transform-style: preserve-3d;
 }
 
@@ -266,8 +258,20 @@ body {
 }
 
 
+.home{
+    animation: reveal 1s forwards;
+}
 
-
+@keyframes reveal {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 
 ul {
@@ -279,36 +283,53 @@ ul {
   li {
     display: inline;
   }
+
+
+button{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+
+.nav{
+    top: 0;
+    padding: 25px;
+    width: 90vw;
+    animation: reveal 1s forwards;
+    animation-delay: .8s;
+    opacity: 0;
+}
+
+.nav-text{
+    font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
+
+}
+
+.portfolio-text{
+    position: fixed;
+    left:100% ;
+    color:#ccc
+}
+
+.name-text{
+    position: fixed;
+}
+
+.footer{
+    position: fixed;
+    bottom:0px;
+    padding: 25px;
+    width: 90vw;
+    animation: reveal 1s forwards;
+    animation-delay: .8s;
+    opacity: 0;
+}
+
 .nav-link{
     text-decoration: none;
-    font-family: 'ITC Avant Garde Gothic Std Demi', sans-serif;
-    font-size: 25px;
-    cursor: pointer;
-    position: relative;
-    
-}
-.top-nav-container, .bottom-nav-container{
-    width: 90%;
-}
-
-.about-link{
-    left:0px;
-}
-
-.work-link{
-    left: 41%;
-}
-
-.contact-link{
-    left: 87.5%;
-}
-
-.bottom-nav-container{
-    position: fixed;
-    bottom: 0px;
-    padding: 25px;
-}
-
-.name-span{
-    left: 0%;
+    margin-left: 50px;
+    text-align: center;
 }
