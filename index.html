@@ -20,26 +20,66 @@
 </head>
 
 <body>
+    
     <div class="nav">
         <label class='nav-text name-text'>i'yana medlock</label>
         <label class='nav-text portfolio-text'>portfolio</label>
     </div>
-    <main id="main">
-    <div class='block home-section-container'>
+    <main id="main-home" class='main-section' >
+    <div class='home-section-container'>
         <div class='section home'>
-            <a target='_blank' class='sphere-container'>
+            <a target='_blank' href="https://github.com/DeadStockSkeleton" class='sphere-container'>
                 <div class='stage'>
                     <p class='text' data-splitting>★ DEADSTOCKSKELETON ★  </p>
                 </div>
             </a>
-        </div>
+        </div>   
     </div>
     </main>
+    <main id="main-about" class='main-section' style="display: none;">
+        <div class='about-section-container'>
+            <div class='section about'>
+                <div class="top-nav">
+                   <button id="back-btn-about" class='back-btn nav-link'>← home</button> 
+                   <div class="content-container">
+                    <h1 class='nav-text' style="text-align: center; color:#ccc;">about</h1>
+                    
+                   </div>
+                </div>
+            </div>   
+        </div>
+        </main>
+        <main id="main-work" class='main-section' style="display: none;">
+            <div class='work-section-container'>
+                <div class='section work'>
+                    <div class="top-nav">
+                       <button id="back-btn-work" class='back-btn nav-link'>← home</button> 
+                       <div class="content-container">
+    sdfds
+                       </div>
+                    </div>
+                </div>   
+            </div>
+            </main>
+            <main id="main-contact" class='main-section' style="display: none;">
+                <div class='contact-section-container'>
+                    <div class='section contact'>
+                        <div class="top-nav">
+                           <button id="back-btn-contact" class='back-btn nav-link'>← home</button> 
+                           <div class="content-container">
+                            dsfds
+                           </div>
+                        </div>
+                    </div>   
+                </div>
+                </main>
+    
+    
     <div class="footer">
         <ul>
-            <li><a class='nav-link nav-text' href="#about">about</a></li>
-            <li><a class='nav-link nav-text' href="#work">work</a></li>
-            <li><a class='nav-link nav-text' href="#contact">contact</a></li>
+            <li><a id='about-btn' class='nav-link nav-text'>about</a></li>
+            <li><a id='work-btn' class='nav-link nav-text'>work</a></li>
+            <li><a id='contact-btn' class='nav-link nav-text'>contact</a></li>
           </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
