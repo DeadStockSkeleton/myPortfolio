@@ -1,8 +1,10 @@
-Splitting();
+
 
 let navLinks = $('.nav-link');
 
 $(document).ready(function(){
+  Splitting();
+
 
     $(navLinks).on('click', function () {
         var active = $('.active');
@@ -15,41 +17,34 @@ $(document).ready(function(){
 
       $('#about-btn').on('click', function() {
           $('.main-section').css('display', 'none');
-          $('#main-about').css('display', 'block');
-          $('#main-work').css('display', 'none');
-          $('#main-contact').css('display', 'none');
+          $('#main').css('display', 'block');
+          $('.about-section-container').css('display', 'block');
+          $('.work-section-container').css('display', 'none');
+          $('.contact-section-container').css('display', 'none');
       });
       $('#work-btn').on('click', function() {
         $('.main-section').css('display', 'none');
-        $('#main-about').css('display', 'none');
-        $('#main-work').css('display', 'block');
-        $('#main-contact').css('display', 'none');
+        $('#main').css('display', 'block');
+        $('.about-section-container').css('display', 'none');
+        $('.work-section-container').css('display', 'block');
+        $('.contact-section-container').css('display', 'none');
     });
     $('#contact-btn').on('click', function() {
-        $('.main-section').css('display', 'none');
-        $('#main-about').css('display', 'none');
-        $('#main-work').css('display', 'none');
-        $('#main-contact').css('display', 'block');
+      $('.main-section').css('display', 'none');
+      $('#main').css('display', 'block');
+      $('.about-section-container').css('display', 'none');
+      $('.work-section-container').css('display', 'none');
+      $('.contact-section-container').css('display', 'block');
     });
 
-      $('#back-btn-about').on('click', function() {
-        openBtn();
-        
-      });
-      $('#back-btn-work').on('click', function() {
-        openBtn();
-        
-      });
-      $('#back-btn-contact').on('click', function() {
-        openBtn();
+      $('.back-btn').on('click', function() {
+        closeBtn();
         
       });
 
-      function openBtn(){
+      function closeBtn(){
         $('.main-section').css('display', 'block');
-        $('#main-about').css('display', 'none');
-        $('#main-work').css('display', 'none');
-          $('#main-contact').css('display', 'none'); 
+        $('#main').css('display', 'none'); 
       }
 
 
