@@ -248,8 +248,9 @@ body {
 .work,
 .contact,
 .top-nav,
-.content-container
-,.slides {
+.content-container,
+.slides,
+.load-text {
   animation: reveal 1s forwards;
 }
 
@@ -258,6 +259,7 @@ body {
     transform: translateY(100px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -431,9 +433,11 @@ b,
   background-size: 0% 2px;
   background-repeat: no-repeat;
   background-position: left bottom;
-  animation: underline 2s ease-in-out 2s forwards; /* remove infinite if you want only once */
+  animation: underline 2s ease-in-out 2s forwards;
+  /* remove infinite if you want only once */
   text-align: center;
 }
+
 @keyframes underline {
   to {
     background-size: 100% 2px;
@@ -453,14 +457,14 @@ b,
   padding: 25px;
 }
 
-.slides{
+.slides {
   position: relative;
-    display: none;
-    opacity: 0;
-    left: 25%;
+  display: none;
+  opacity: 0;
+  left: 25%;
 }
 
-.contact-card{
+.contact-card {
   height: 100px;
   padding: 15px;
   display: flex;
@@ -471,13 +475,13 @@ b,
   vertical-align: middle;
 }
 
-.a-text{
+.a-text {
   font-size: 25px;
   text-decoration: none;
- 
+
 }
 
-.contact-text{
+.contact-text {
   line-height: 100px;
   color: gray;
 }
