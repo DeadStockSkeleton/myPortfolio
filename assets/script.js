@@ -42,5 +42,37 @@ $(document).ready(function () {
     $("#main-home").css("display", "none");
   });
 
+  $('.btn').on('click', function() {
+    $('#back-btn').css('display', "block");
+  });
+
+  $('#back-btn').on('click', function() {
+    $('.about').css('display', "none");
+    $('.work').css('display', "none");
+    $('.contact').css('display', "none");
+    $('.home').css('display', "block");
+    $('#back-btn').css('display', "none");
+  });
+
+  $('#about-btn').on('click', function(){
+    $('.about').css('display', "block");
+    $('.work').css('display', "none");
+    $('.contact').css('display', "none");
+    $('.home').css('display', "none");
+  });
+
+  $('#work-btn').on('click', function(){
+    $('.about').css('display', "none");
+    $('.work').css('display', "block");
+    $('.contact').css('display', "none");
+    $('.home').css('display', "none");
+  });
+
+  $('#contact-btn').on('click', function(){
+    $('.about').css('display', "none");
+    $('.work').css('display', "none");
+    $('.contact').css('display', "block");
+    $('.home').css('display', "none");
+  });
   
 });
